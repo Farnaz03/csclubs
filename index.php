@@ -91,9 +91,8 @@
     /// show the user that they have logged in and now can use the app
     if (isset($_GET['message'])) echo $_GET['message'];
     ?>
-    Welcome, <?php echo $_SESSION['FirstName']; ?> <p class="text-danger d-inline">[<?php echo $_SESSION['UserType']; ?>]</p>
+    Welcome, <?php echo $_SESSION['FirstName']; ?> <p class="text-danger d-inline pr-2">[<?php echo $_SESSION['UserType']; ?>]</p>
     <a href="?logout=yes"><button class="btn btn-sm btn-danger" name="submit" type="submit">logout</button></a>
-
 
     <!--here you can place you application content, menu etc... -->
    <head>
@@ -114,6 +113,7 @@
 </head>
 <body>
     <!-- Navbar at top of page -->
+    <br>
     <nav class="navbar navbar-light navbar-toggleable-md bg-primary">
         <div class="container">
           <a class="navbar-brand text-white" href="index.php">Dashboard</a>
