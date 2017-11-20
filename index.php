@@ -77,8 +77,6 @@
         <div class="form-group">
        <label for="Password">Password</label>
        <input class="form-control" name="Password" type="Password" id="password" >
-     <!--   <input name="submit" type="submit" value="Login" /> -->
-           <!--  <button class="btn btn-primary"name="submit" type="submit">login</button> -->
       </form>
     </div>
              <button class="btn btn-primary"name="submit" type="submit">login</button>
@@ -164,7 +162,7 @@
             <img class="card-img-top" src="img/cybersecuritylogo.jpg" alt="Robotics Club Logo">
             <div class="card-block">
               <h4 class="card-title">CyberSecurity Club</h4>
-              <p class="card-text">The CS Tech-ED Revolution Club exists in order to promote the awareness of the applications and benefits of Computer Science and related for enhancing society.</p>
+              <p class="card-text">The CyberSecurity club exists to inform the masses about potential online threats and how to protect yourself against these threats</p>
               <a class="btn btn-success btn-block" href="cybersecurity.php">More...</a>
             </div>
           </div>
