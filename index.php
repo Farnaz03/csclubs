@@ -151,11 +151,21 @@
         </div>
         <div class="col-sm-4">
           <div class="card" style="width:20rem">
-            <img class="card-img-top" src="img/techedlogo.jpg" alt="Robotics Club Logo">
+            <img class="card-img-top" src="img/techedlogo.jpg" alt="TechEdRev Club Logo">
             <div class="card-block">
               <h4 class="card-title">Technology Education Revolution Club</h4>
               <p class="card-text">The CS Tech-ED Revolution Club exists in order to promote the awareness of the applications and benefits of Computer Science and related for enhancing society.</p>
               <a class="btn btn-success btn-block" href="teched.php">More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card" style="width:20rem">
+            <img class="card-img-top" src="img/cybersecuritylogo.jpg" alt="Robotics Club Logo">
+            <div class="card-block">
+              <h4 class="card-title">CyberSecurity Club</h4>
+              <p class="card-text">The CS Tech-ED Revolution Club exists in order to promote the awareness of the applications and benefits of Computer Science and related for enhancing society.</p>
+              <a class="btn btn-success btn-block" href="cybersecurity.php">More...</a>
             </div>
           </div>
         </div>
