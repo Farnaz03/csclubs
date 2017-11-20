@@ -41,7 +41,7 @@
 
     <br>
 
-    <center><img src="img/roboticslogo.jpg" width="20%" /></center>
+    <center><img src="img/techedlogo.jpg" width="20%" /></center>
 
     <br>
 
@@ -61,7 +61,7 @@
 
     $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
     if (!$conn) {
-    	die ('Failed to connect to MySQL: ' . mysqli_connect_error());
+      die ('Failed to connect to MySQL: ' . mysqli_connect_error());
     }
 
     $sql = 'SELECT * FROM student INNER JOIN aremembers ON student.SID = aremembers.SID LIMIT 5';
@@ -69,7 +69,7 @@
     $query = mysqli_query($conn, $sql);
 
     if (!$query) {
-    	die ('SQL Error: ' . mysqli_error($conn));
+      die ('SQL Error: ' . mysqli_error($conn));
     }
     ?>
 
@@ -122,7 +122,7 @@
 
     $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
     if (!$conn) {
-    	die ('Failed to connect to MySQL: ' . mysqli_connect_error());
+      die ('Failed to connect to MySQL: ' . mysqli_connect_error());
     }
 
     $sql = 'SELECT * FROM student';
@@ -130,7 +130,7 @@
     $query = mysqli_query($conn, $sql);
 
     if (!$query) {
-    	die ('SQL Error: ' . mysqli_error($conn));
+      die ('SQL Error: ' . mysqli_error($conn));
     }
     ?>
 
@@ -138,44 +138,44 @@
     <h2 class="display-6 ml-5">Members</h2>
 
     <div class="container">
- 	    <table class="table table-striped table-bordered">
- 		      <thead>
- 			         <tr>
+      <table class="table table-striped table-bordered">
+          <thead>
+               <tr>
                   <th>SID</th>
- 				          <th>First Name</th>
+                  <th>First Name</th>
                   <th>Last Name</th>
                   <th>Email</th>
                   <th>Year Of Study</th>
- 			        </tr>
- 		      </thead>
- 		<tbody>
- 		<?php
+              </tr>
+          </thead>
+    <tbody>
+    <?php
 
 
- 		while ($row = mysqli_fetch_array($query))
- 		{
- 			//$SID  = $row['SID'] == 0 ? '' : number_format($row['SID']);
- 			echo '<tr>
- 					<td>'.$row['SID'].'</td>
- 					<td>'.$row['FirstName'].'</td>
- 					<td>'.$row['LastName'].'</td>
+    while ($row = mysqli_fetch_array($query))
+    {
+      //$SID  = $row['SID'] == 0 ? '' : number_format($row['SID']);
+      echo '<tr>
+          <td>'.$row['SID'].'</td>
+          <td>'.$row['FirstName'].'</td>
+          <td>'.$row['LastName'].'</td>
           <td>'.$row['Email'].'</td>
- 					<td>'.$row['YearOfStudy'].'</td>
- 				</tr>';
+          <td>'.$row['YearOfStudy'].'</td>
+        </tr>';
 
- 		//	$no++;
- 		}?>
- 		</tbody>
- 		<tfoot>
- 			<tr>
- <!--				<th colspan="4">TOTAL</th>
- 				<th><?=number_format($total)?></th> -->
- 			</tr>
- 		</tfoot>
- 	</table>
+    //	$no++;
+    }?>
+    </tbody>
+    <tfoot>
+      <tr>
+    <!--				<th colspan="4">TOTAL</th>
+        <th><?=number_format($total)?></th> -->
+      </tr>
+    </tfoot>
+    </table>
     </div>
 
-     <div style="margin-top:500px;"></div>
+    <div style="margin-top:500px;"></div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
