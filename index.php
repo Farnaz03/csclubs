@@ -91,8 +91,9 @@
     /// show the user that they have logged in and now can use the app
     if (isset($_GET['message'])) echo $_GET['message'];
     ?>
-    Welcome <?php echo $_SESSION['FirstName']; ?> , You have logged in as <?php echo $_SESSION['UserType']; ?>
-    <a href="?logout=yes"><button class="btn btn-sm btn-danger"name="submit" type="submit">logout</button></a> <br />
+    Welcome, <?php echo $_SESSION['FirstName']; ?> <p class="text-danger d-inline">[<?php echo $_SESSION['UserType']; ?>]</p>
+    <a href="?logout=yes"><button class="btn btn-sm btn-danger" name="submit" type="submit">logout</button></a>
+
 
     <!--here you can place you application content, menu etc... -->
    <head>
