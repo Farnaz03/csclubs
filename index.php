@@ -135,35 +135,35 @@
 
     <br>
 
-    <div class="container">
+    <div class="container center">
       <div class="row">
         <div class="col-sm-4">
-          <div class="card" style="width:20rem">
+          <div class="card card-outline-primary" style="width:20rem">
             <img class="card-img-top" src="img/roboticslogo.jpg" alt="Robotics Club Logo">
             <div class="card-block">
               <h4 class="card-title">Robotics Club</h4>
               <p class="card-text">The UG Robotics Club exists in order to build and promote the awareness of robotics technology and robotics-related issues for enhancing society.</p>
-              <a class="btn btn-success btn-block" href="robotics.php">More...</a>
+              <a class="btn btn-primary btn-block" href="robotics.php">More...</a>
             </div>
           </div>
         </div>
         <div class="col-sm-4">
-          <div class="card" style="width:20rem">
+          <div class="card card-outline-primary" style="width:20rem">
             <img class="card-img-top" src="img/techedlogo.jpg" alt="TechEdRev Club Logo">
             <div class="card-block">
               <h4 class="card-title">Technology Education Revolution Club</h4>
               <p class="card-text">The CS Tech-ED Revolution Club exists in order to promote the awareness of the applications and benefits of Computer Science and related for enhancing society.</p>
-              <a class="btn btn-success btn-block" href="teched.php">More...</a>
+              <a class="btn btn-primary btn-block" href="teched.php">More...</a>
             </div>
           </div>
         </div>
         <div class="col-sm-4">
-          <div class="card" style="width:20rem">
+          <div class="card card-outline-primary" style="width:20rem">
             <img class="card-img-top" src="img/cybersecuritylogo.jpg" alt="Robotics Club Logo">
             <div class="card-block">
               <h4 class="card-title">CyberSecurity Club</h4>
               <p class="card-text">The CyberSecurity club exists to inform the masses about potential online threats and how to protect yourself against these threats</p>
-              <a class="btn btn-success btn-block" href="cybersecurity.php">More...</a>
+              <a class="btn btn-primary btn-block" href="cybersecurity.php">More...</a>
             </div>
           </div>
         </div>
