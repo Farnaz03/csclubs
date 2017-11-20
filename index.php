@@ -144,7 +144,7 @@
             <img class="card-img-top" src="img/roboticslogo.jpg" alt="Robotics Club Logo">
             <div class="card-block">
               <h4 class="card-title">Robotics Club</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quas.</p>
+              <p class="card-text">The UG Robotics Club exists in order to build and promote the awareness of robotics technology and robotics-related issues for enhancing society.</p>
               <a class="btn btn-success btn-block" href="robotics.php">More...</a>
             </div>
           </div>
@@ -154,7 +154,7 @@
             <img class="card-img-top" src="img/techedlogo.jpg" alt="Robotics Club Logo">
             <div class="card-block">
               <h4 class="card-title">Technology Education Revolution Club</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quas.</p>
+              <p class="card-text">The CS Tech-ED Revolution Club exists in order to promote the awareness of the applications and benefits of Computer Science and related for enhancing society.</p>
               <a class="btn btn-success btn-block" href="teched.php">More...</a>
             </div>
           </div>
