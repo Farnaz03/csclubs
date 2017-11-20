@@ -135,9 +135,32 @@
     </nav>
 
     <br>
-    <br>
-    <br>
-    <br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card" style="width:20rem">
+            <img class="card-img-top" src="img/roboticslogo.jpg" alt="Robotics Club Logo">
+            <div class="card-block">
+              <h4 class="card-title">Robotics Club</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quas.</p>
+              <a class="btn btn-success btn-block" href="robotics.php">More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card" style="width:20rem">
+            <img class="card-img-top" src="img/techedlogo.jpg" alt="Robotics Club Logo">
+            <div class="card-block">
+              <h4 class="card-title">Technology Education Revolution Club</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quas.</p>
+              <a class="btn btn-success btn-block" href="teched.php">More...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 <?php
     } // end if successfully logged in...

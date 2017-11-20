@@ -49,11 +49,7 @@
     <h1 class="display-4 text-md-center">Robotics Club</h1>
 
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
+    
     <?php
     $db_host = 'localhost'; // Server Name
     $db_user = 'root'; // Username

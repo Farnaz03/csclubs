@@ -49,10 +49,6 @@
     <h1 class="display-4 text-md-center">Technology Education Revolution Club</h1>
 
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
     <?php
     $db_host = 'localhost'; // Server Name
