@@ -61,7 +61,7 @@
       die ('Failed to connect to MySQL: ' . mysqli_connect_error());
     }
 
-    $sql = 'SELECT * FROM aremembers INNER JOIN student ON student.SID = aremembers.SID WHERE CID=2';
+    $sql = 'SELECT * FROM aremembers INNER JOIN student ON student.SID = aremembers.SID WHERE CID=2 LIMIT 3';
 
     $query = mysqli_query($conn, $sql);
 
