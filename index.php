@@ -69,7 +69,7 @@
     <h3 class="text-center">Computer Science Clubs Database</h3>
     <br/>
         <form action="?login=yes" method="post" enctype="multipart/form-data" name="login" target="_self">
-        <div class="container center">
+        <div class="container center col-md-4">
         <div class="form-group">
         <label for="Username">Username</label>
             <input class="form-control" name="Username" type="text" id="Username">
@@ -79,7 +79,7 @@
        <input class="form-control" name="Password" type="Password" id="password" >
       </form>
     </div>
-             <button class="btn btn-primary"name="submit" type="submit">login</button>
+             <button class="btn btn-primary"name="submit" type="submit">Login</button>
    </div>
 
 
