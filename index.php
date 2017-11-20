@@ -17,8 +17,8 @@
         if (isset($_POST['Password']))  $Password = MD5($_POST['Password']);
 
         $result = query("SELECT * FROM student WHERE Username = '{$Username}' AND Password = '{$Password}' LIMIT 1");
-        
-        
+
+
         if (!empty($result)) {
             // user is authenticated
             $user = $result[0];
@@ -30,7 +30,7 @@
             $message = "";
             print "<meta http-equiv=\"refresh\" content=\"0;URL=?message={$message}\">";
         } else {
-            
+
             // bounce to the index file with a message
             $message = "Please check your username and password and try again";
             print "<meta http-equiv=\"refresh\" content=\"0;URL=?message={$message}\">";
@@ -58,8 +58,8 @@
     </style>
 </head>
 <body>
-    
- 
+
+
 <?php if (!logged_in()){
     // render login screen
     if (isset($_GET['message'])) echo $_GET['message'];
@@ -75,22 +75,22 @@
             </div>
         <div class="form-group">
        <label for="Password">Password</label>
-       <input class="form-control" name="Password" type="Password" id="password" > 
+       <input class="form-control" name="Password" type="Password" id="password" >
      <!--   <input name="submit" type="submit" value="Login" /> -->
            <!--  <button class="btn btn-primary"name="submit" type="submit">login</button> -->
-      </form> 
-    </div> 
+      </form>
+    </div>
              <button class="btn btn-primary"name="submit" type="submit">login</button>
-   </div> 
+   </div>
 
-  
+
 <?php
 } // end if not logged in
     else {
     /// show the user that they have logged in and now can use the app
     if (isset($_GET['message'])) echo $_GET['message'];
     ?>
-    Welcome <?php echo $_SESSION['FirstName']; ?> , You have logged in as <?php echo $_SESSION['UserType']; ?> 
+    Welcome <?php echo $_SESSION['FirstName']; ?> , You have logged in as <?php echo $_SESSION['UserType']; ?>
     <a href="?logout=yes"><button class="btn btn-sm btn-danger"name="submit" type="submit">logout</button></a> <br />
 
     <!--here you can place you application content, menu etc... -->
@@ -120,7 +120,7 @@
                       <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#">Clubs</a>
                       <div class="dropdown-menu">
                         <a href="robotics.php" class="dropdown-item">Robotics</a>
-                        <a href="teched.html" class="dropdown-item">Technology Education Revolution</a>
+                        <a href="teched.php" class="dropdown-item">Technology Education Revolution</a>
                       </div>
                   </li>
                   <li class="nav-item">

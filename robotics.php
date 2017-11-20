@@ -26,7 +26,7 @@
                       <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#">Clubs</a>
                       <div class="dropdown-menu">
                         <a href="robotics.php" class="dropdown-item">Robotics</a>
-                        <a href="teched.html" class="dropdown-item">Technology Education Revolution</a>
+                        <a href="teched.php" class="dropdown-item">Technology Education Revolution</a>
                       </div>
                   </li>
                   <li class="nav-item">

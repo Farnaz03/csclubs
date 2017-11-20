@@ -26,7 +26,7 @@
                       <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#">Clubs</a>
                       <div class="dropdown-menu">
                         <a href="robotics.php" class="dropdown-item">Robotics</a>
-                        <a href="teched.html" class="dropdown-item">Technology Education Revolution</a>
+                        <a href="teched.php" class="dropdown-item">Technology Education Revolution</a>
                       </div>
                   </li>
                   <li class="nav-item">
@@ -64,7 +64,7 @@
       die ('Failed to connect to MySQL: ' . mysqli_connect_error());
     }
 
-    $sql = 'SELECT * FROM student INNER JOIN aremembers ON student.SID = aremembers.SID LIMIT 5';
+    $sql = 'SELECT * FROM student INNER JOIN aremembers ON student.SID = aremembers.SID WHERE CID=2';
 
     $query = mysqli_query($conn, $sql);
 
@@ -125,7 +125,7 @@
       die ('Failed to connect to MySQL: ' . mysqli_connect_error());
     }
 
-    $sql = 'SELECT * FROM student';
+    $sql = 'SELECT * FROM student INNER JOIN aremembers ON student.SID = aremembers.SID WHERE aremembers.CID=2';
 
     $query = mysqli_query($conn, $sql);
 
