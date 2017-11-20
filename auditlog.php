@@ -1,5 +1,6 @@
 <html>
 <head>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -21,7 +22,8 @@
         <div class="container">
           <a class="navbar-brand text-white" href="index.php">Dashboard</a>
               <ul class="navbar-nav">
-    
+
+
                   <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#">Clubs</a>
                       <div class="dropdown-menu">
@@ -39,12 +41,7 @@
           </div>
     </nav>
 
-    <br>
-    <br>
-    <br>
-    <br>
-
- <br />
+    <h1 class="display-1 text-md-center">Audit Log</h1>
 
     <div style="margin-top:500px;"></div>
 
@@ -53,6 +50,5 @@
     crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-     
 </body>
 </html>

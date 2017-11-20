@@ -1,6 +1,6 @@
 <html>
 <head>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -31,10 +31,10 @@
                       </div>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link text-white" href="auditlog.html">Audit Log</a>
+                      <a class="nav-link text-white" href="auditlog.php">Audit Log</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link text-white" href="reports.html">Reports</a>
+                      <a class="nav-link text-white" href="reports.php">Reports</a>
                   </li>
               </ul>
           </div>
