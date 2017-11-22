@@ -65,6 +65,10 @@
     // render login screen
     if (isset($_GET['message'])) echo $_GET['message'];
 ?>
+
+	<br><br><br>
+	
+	<div class="container">
     <h3 class="text-center">Department of Computer Science</h3>
     <h3 class="text-center">Computer Science Clubs Database</h3>
     <br/>
@@ -81,7 +85,7 @@
     </div>
              <button class="btn btn-primary"name="submit" type="submit">Login</button>
    </div>
-
+   </div>
 
 <?php
 } // end if not logged in
@@ -89,8 +93,8 @@
     /// show the user that they have logged in and now can use the app
     if (isset($_GET['message'])) echo $_GET['message'];
     ?>
-    Welcome, <?php echo $_SESSION['FirstName']; ?> <p class="text-danger d-inline pr-2">[<?php echo $_SESSION['UserType']; ?>]</p>
-    <a href="?logout=yes"><button class="btn btn-sm btn-danger" name="submit" type="submit">logout</button></a>
+    <div class="row justify-content-start pl-4" style="height:3px;">Welcome, <?php echo $_SESSION['FirstName']; ?> <p class="text-danger d-inline pr-2 pl-2">[<?php echo $_SESSION['UserType']; ?>]</p>
+    <a href="?logout=yes"><button class="btn btn-sm btn-danger" name="submit" type="submit">logout</button></a></div>
 
     <!--here you can place you application content, menu etc... -->
    <head>
