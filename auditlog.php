@@ -281,7 +281,7 @@
           echo '<tr>
           <td>'.$row['CID'].'</td>
           <td>'.$row['Name'].'</td>
-               <td>'.$row['Time_his'].'</td>
+        <td>'.$row['Time_his'].'</td>
         </tr>';
 
    	}?>
