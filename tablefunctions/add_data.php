@@ -5,12 +5,13 @@ if(isset($_POST['btn-save']))
  // variables for input data
  $firstname = $_POST['firstname'];
  $lastname = $_POST['lastname'];
- $cityname = $_POST['cityname'];
+ $gender = $_POST['gender'];
+ $email = $_POST['email'];
  // variables for input data
 
  // sql query for inserting data into database
 
-        $sql_query = "INSERT INTO students(first_name,last_name,user_city) VALUES('$first_name','$last_name','$city_name')";
+        $sql_query = "INSERT INTO students(firstname,lastname,gender,emails) VALUES('$firstname','$lastname','$gender','$email')";
  mysql_query($sql_query);
 
         // sql query for inserting data into database
@@ -49,16 +50,19 @@ if(isset($_POST['btn-save']))
     <form method="post">
     <table align="center">
     <tr>
-    <td align="center"><a href="index.php">back to main page</a></td>
+    <td align="center"><a href="index.php">Back to main page</a></td>
     </tr>
     <tr>
-    <td><input type="text" name="first_name" placeholder="First Name" required /></td>
+    <td><input type="text" name="firstname" placeholder="First Name" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="last_name" placeholder="Last Name" required /></td>
+    <td><input type="text" name="lastname" placeholder="Last Name" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="city_name" placeholder="City" required /></td>
+    <td><input type="text" name="gender" placeholder="Gender" required /></td>
+    </tr>
+    <tr>
+    <td><input type="text" name="email" placeholder="Email" required /></td>
     </tr>
     <tr>
     <td><button type="submit" name="btn-save"><strong>SAVE</strong></button></td>
