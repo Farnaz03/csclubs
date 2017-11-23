@@ -1,5 +1,5 @@
 <?php
-include_once 'dbconfig.php';
+include_once "/includes/db_config.php";
 if(isset($_POST['btn-save']))
 {
  // variables for input data
@@ -11,10 +11,10 @@ if(isset($_POST['btn-save']))
 
  // sql query for inserting data into database
 
-        $sql_query = "INSERT INTO students(firstname,lastname,gender,emails) VALUES('$firstname','$lastname','$gender','$email')";
+ $sql_query = "INSERT INTO students(firstname,lastname,gender,emails) VALUES('$firstname','$lastname','$gender','$email')";
  mysql_query($sql_query);
 
-        // sql query for inserting data into database
+ // sql query for inserting data into database
 
 }
 ?>
