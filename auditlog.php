@@ -162,7 +162,7 @@
           <td>'.$row['SID'].'</td>
           <td>'.$row['FirstName'].'</td>
           <td>'.$row['LastName'].'</td>
-         <td>'.$row['DOB'].'</td>'].'</td>
+         <td>'.$row['DOB'].'</td>'.'</td>
           <td>'.$row['Gender'].'</td>
            <td>'.$row['Email'].'</td>
             <td>'.$row['ContactNumber'].'</td>
@@ -226,7 +226,7 @@
           <td>'.$row['SID'].'</td>
           <td>'.$row['MID'].'</td>
           <td>'.$row['CID'].'</td>
-         <td>'.$row['Role'].'</td>'].'</td>
+         <td>'.$row['Role'].'</td>'.'</td>
           <td>'.$row['Time_his'].'</td>
         </tr>';
 
@@ -338,7 +338,7 @@
           <td>'.$row['CID'].'</td>
           <td>'.$row['COID'].'</td>
           <td>'.$row['LID'].'</td>
-         <td>'.$row['Role'].'</td>'].'</td>
+         <td>'.$row['Role'].'</td>'.'</td>
                <td>'.$row['Time_his'].'</td>
         </tr>';
 
@@ -419,7 +419,7 @@
     	die ('Failed to connect to MySQL: ' . mysqli_connect_error());
     }
 
-    $sql = 'SELECT * FROM interest_history';
+    $sql = 'SELECT * FROM interests_history';
 
     $query = mysqli_query($conn, $sql);
 
