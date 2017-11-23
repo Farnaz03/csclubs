@@ -73,9 +73,9 @@
     <!-- Members table -->
     <h2 class="display-6 ml-5 d-inline">Executive Body</h2>
     <div class="d-inline float-right mr-5">
-      <button class="btn btn-link pr-2 text-success"<a href="#">Insert</a></button>
-      <button class="btn btn-link pr-2 text-primary"<a href="#">Update</a></button>
-      <button class="btn btn-link pr-2 text-danger"<a href="#">Delete</a></button>
+      <button class="btn btn-link pr-2"><a class="text-success" href="tablefunctions/robotics/insert-staff-robotics.php">Insert</a></button>
+      <button class="btn btn-link pr-2"><a class="text-primary" href="tablefunctions/robotics/update-staff-robotics.php">Update</a></button>
+      <button class="btn btn-link pr-2"><a class="text-danger" href="tablefunctions/robotics/delete-staff-robotics.php">Delete</a></button>
     </div>
 
     <div class="container">
@@ -139,9 +139,9 @@
     <!-- Members table -->
     <h2 class="display-6 ml-5 d-inline">Members</h2>
     <div class="d-inline float-right mr-5">
-      <button class="btn btn-link pr-2 text-success"<a href="#">Insert</a></button>
-      <button class="btn btn-link pr-2 text-primary"<a href="#">Update</a></button>
-      <button class="btn btn-link pr-2 text-danger"<a href="#">Delete</a></button>
+      <button class="btn btn-link pr-2"><a class="text-success" href="tablefunctions/robotics/insert-members-robotics.php">Insert</a></button>
+      <button class="btn btn-link pr-2"><a class="text-primary" href="tablefunctions/robotics/update-members-robotics.php">Update</a></button>
+      <button class="btn btn-link pr-2"><a class="text-danger" href="tablefunctions/robotics/delete-members-robotics.php">Delete</a></button>
     </div>
 
     <div class="container">
