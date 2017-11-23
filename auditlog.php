@@ -42,6 +42,71 @@
     </nav>
 
     <h1 class="display-1 text-md-center">Audit Log</h1>
+    <br>
+    <tbody>
+        
+     <?php
+    $db_host = 'localhost'; // Server Name
+    $db_user = 'root'; // Username
+    $db_pass = ''; // Password
+    $db_name = 'csclubs'; // Database Name
+
+    $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+    if (!$conn) {
+    	die ('Failed to connect to MySQL: ' . mysqli_connect_error());
+    }
+
+    $sql = 'SELECT * FROM history_lecturer';
+
+    $query = mysqli_query($conn, $sql);
+
+    if (!$query) {
+    	die ('SQL Error: ' . mysqli_error($conn));
+    }
+    ?>
+    <h2 class="display-6 ml-5">Lecturer Table History</h2>
+        
+        <div class="container">
+     <table class="table table-striped table-bordered">
+          <thead>
+               <tr>
+                   <th>LID</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                   <th>Gender</th>
+                  <th>Email</th>
+                   <th>Contact Number</th>
+                   <th>Username</th>
+                   <th>Password</th>
+                  <th>Access Level</th>
+                   <th>Modified on</th>
+              </tr>
+          </thead>
+    <tbody>
+    <?php
+
+    while ($row = mysqli_fetch_array($query))
+    {
+          echo '<tr>
+          <td>'.$row['LID'].'</td>
+          <td>'.$row['FirstName'].'</td>
+          <td>'.$row['LastName'].'</td>
+          <td>'.$row['Gender'].'</td>
+           <td>'.$row['Email'].'</td>
+            <td>'.$row['ContactNumber'].'</td>
+             <td>'.$row['Username'].'</td>
+              <td>'.$row['Password'].'</td>
+               <td>'.$row['AccessLevel'].'</td>
+               <td>'.$row['Time_his'].'</td>
+        </tr>';
+
+   	}?>
+        </tbody>
+ 		<tfoot>
+ 			
+ 		</tfoot>
+ 	</table>
+    </div>
 
     <div style="margin-top:500px;"></div>
 
