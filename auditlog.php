@@ -487,7 +487,6 @@
                <tr>
                    <th>UAID</th>
                   <th>User Type</th>
-                  <th>Access Level</th>
                    <th>Modified on</th>
               </tr>
           </thead>
@@ -499,7 +498,6 @@
           echo '<tr>
           <td>'.$row['UAID'].'</td>
           <td>'.$row['UserType'].'</td>
-          <td>'.$row['AccessLevel'].'</td>
          <td>'.$row['Time_his'].'</td>
         </tr>';
 
