@@ -107,7 +107,415 @@
  		</tfoot>
  	</table>
     </div>
+<br>
+        <br>
+        
+        
+    <tbody>
+        
+     <?php
+    $db_host = 'localhost'; // Server Name
+    $db_user = 'root'; // Username
+    $db_pass = ''; // Password
+    $db_name = 'csclubs'; // Database Name
 
+    $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+    if (!$conn) {
+    	die ('Failed to connect to MySQL: ' . mysqli_connect_error());
+    }
+
+    $sql = 'SELECT * FROM student_history';
+
+    $query = mysqli_query($conn, $sql);
+
+    if (!$query) {
+    	die ('SQL Error: ' . mysqli_error($conn));
+    }
+    ?>
+    <h2 class="display-6 ml-5">Student Table History</h2>
+        
+        <div class="container">
+     <table class="table table-striped table-bordered">
+          <thead>
+               <tr>
+                   <th>SID</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                    <th>Date Of Birth</th>
+                   <th>Gender</th>
+                  <th>Email</th>
+                   <th>Contact Number</th>
+                   <th>Username</th>
+                   <th>Password</th>
+                  <th>User Type</th>
+                   <th>Year Of Study</th>
+                   <th>USI</th>
+                   <th>Modified on</th>
+              </tr>
+          </thead>
+    <tbody>
+    <?php
+
+    while ($row = mysqli_fetch_array($query))
+    {
+          echo '<tr>
+          <td>'.$row['SID'].'</td>
+          <td>'.$row['FirstName'].'</td>
+          <td>'.$row['LastName'].'</td>
+         <td>'.$row['DOB'].'</td>'].'</td>
+          <td>'.$row['Gender'].'</td>
+           <td>'.$row['Email'].'</td>
+            <td>'.$row['ContactNumber'].'</td>
+             <td>'.$row['Username'].'</td>
+              <td>'.$row['Password'].'</td>
+               <td>'.$row['UserType'].'</td>
+               <td>'.$row['YearOfStudy'].'</td>
+               <td>'.$row['USI'].'</td>
+               <td>'.$row['Time_his'].'</td>
+        </tr>';
+
+   	}?>
+        </tbody>
+ 		<tfoot>
+ 			
+ 		</tfoot>
+ 	</table>
+    </div>
+        
+       <br>
+        <br>
+        
+       <?php
+    $db_host = 'localhost'; // Server Name
+    $db_user = 'root'; // Username
+    $db_pass = ''; // Password
+    $db_name = 'csclubs'; // Database Name
+
+    $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+    if (!$conn) {
+    	die ('Failed to connect to MySQL: ' . mysqli_connect_error());
+    }
+
+    $sql = 'SELECT * FROM aremembers_history';
+
+    $query = mysqli_query($conn, $sql);
+
+    if (!$query) {
+    	die ('SQL Error: ' . mysqli_error($conn));
+    }
+    ?>
+    <h2 class="display-6 ml-5">Are Members Relationship Table History</h2>
+        
+        <div class="container">
+     <table class="table table-striped table-bordered">
+          <thead>
+               <tr>
+                   <th>SID</th>
+                   <th>MID</th>
+                  <th>CID</th>
+                   <th>Role</th>
+                   <th>Modified on</th>
+              </tr>
+          </thead>
+    <tbody>
+    <?php
+
+    while ($row = mysqli_fetch_array($query))
+    {
+          echo '<tr>
+          <td>'.$row['SID'].'</td>
+          <td>'.$row['MID'].'</td>
+          <td>'.$row['CID'].'</td>
+         <td>'.$row['Role'].'</td>'].'</td>
+          <td>'.$row['Time_his'].'</td>
+        </tr>';
+
+   	}?>
+        </tbody>
+ 		<tfoot>
+ 			
+ 		</tfoot>
+ 	</table>
+    </div>
+        
+       <br>
+        <br>
+        
+        
+        
+        <?php
+    $db_host = 'localhost'; // Server Name
+    $db_user = 'root'; // Username
+    $db_pass = ''; // Password
+    $db_name = 'csclubs'; // Database Name
+
+    $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+    if (!$conn) {
+    	die ('Failed to connect to MySQL: ' . mysqli_connect_error());
+    }
+
+    $sql = 'SELECT * FROM clubs_history';
+
+    $query = mysqli_query($conn, $sql);
+
+    if (!$query) {
+    	die ('SQL Error: ' . mysqli_error($conn));
+    }
+    ?>
+    <h2 class="display-6 ml-5">Clubs Table History</h2>
+        
+        <div class="container">
+     <table class="table table-striped table-bordered">
+          <thead>
+               <tr>
+                   <th>CID</th>
+                  <th>Name</th>
+                   <th>Modified on</th>
+              </tr>
+          </thead>
+    <tbody>
+    <?php
+
+    while ($row = mysqli_fetch_array($query))
+    {
+          echo '<tr>
+          <td>'.$row['CID'].'</td>
+          <td>'.$row['Name'].'</td>
+               <td>'.$row['Time_his'].'</td>
+        </tr>';
+
+   	}?>
+        </tbody>
+ 		<tfoot>
+ 			
+ 		</tfoot>
+ 	</table>
+    </div>
+        
+        <br>
+        <br>
+        
+        
+        
+        <?php
+    $db_host = 'localhost'; // Server Name
+    $db_user = 'root'; // Username
+    $db_pass = ''; // Password
+    $db_name = 'csclubs'; // Database Name
+
+    $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+    if (!$conn) {
+    	die ('Failed to connect to MySQL: ' . mysqli_connect_error());
+    }
+
+    $sql = 'SELECT * FROM coordinate_history';
+
+    $query = mysqli_query($conn, $sql);
+
+    if (!$query) {
+    	die ('SQL Error: ' . mysqli_error($conn));
+    }
+    ?>
+    <h2 class="display-6 ml-5">Coordinate Relationship Table History</h2>
+        
+        <div class="container">
+     <table class="table table-striped table-bordered">
+          <thead>
+               <tr>
+                   <th>CID</th>
+                  <th>COID</th>
+                  <th>LID</th>
+                    <th>Role</th>
+                   <th>Modified on</th>
+              </tr>
+          </thead>
+    <tbody>
+    <?php
+
+    while ($row = mysqli_fetch_array($query))
+    {
+          echo '<tr>
+          <td>'.$row['CID'].'</td>
+          <td>'.$row['COID'].'</td>
+          <td>'.$row['LID'].'</td>
+         <td>'.$row['Role'].'</td>'].'</td>
+               <td>'.$row['Time_his'].'</td>
+        </tr>';
+
+   	}?>
+        </tbody>
+ 		<tfoot>
+ 			
+ 		</tfoot>
+ 	</table>
+    </div>
+        
+        
+        <br>
+        <br>
+        
+        <?php
+    $db_host = 'localhost'; // Server Name
+    $db_user = 'root'; // Username
+    $db_pass = ''; // Password
+    $db_name = 'csclubs'; // Database Name
+
+    $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+    if (!$conn) {
+    	die ('Failed to connect to MySQL: ' . mysqli_connect_error());
+    }
+
+    $sql = 'SELECT * FROM have_history';
+
+    $query = mysqli_query($conn, $sql);
+
+    if (!$query) {
+    	die ('SQL Error: ' . mysqli_error($conn));
+    }
+    ?>
+    <h2 class="display-6 ml-5">Have Relationship Table History</h2>
+        
+        <div class="container">
+     <table class="table table-striped table-bordered">
+          <thead>
+               <tr>
+                   <th>SID</th>
+                  <th>HID</th>
+                  <th>IID</th>
+                   <th>Modified on</th>
+              </tr>
+          </thead>
+    <tbody>
+    <?php
+
+    while ($row = mysqli_fetch_array($query))
+    {
+          echo '<tr>
+          <td>'.$row['SID'].'</td>
+          <td>'.$row['HID'].'</td>
+          <td>'.$row['IID'].'</td>
+         <td>'.$row['Time_his'].'</td>
+        </tr>';
+
+   	}?>
+        </tbody>
+ 		<tfoot>
+ 			
+ 		</tfoot>
+ 	</table>
+    </div>
+        
+        <br>
+        <br>
+        
+             <?php
+    $db_host = 'localhost'; // Server Name
+    $db_user = 'root'; // Username
+    $db_pass = ''; // Password
+    $db_name = 'csclubs'; // Database Name
+
+    $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+    if (!$conn) {
+    	die ('Failed to connect to MySQL: ' . mysqli_connect_error());
+    }
+
+    $sql = 'SELECT * FROM interest_history';
+
+    $query = mysqli_query($conn, $sql);
+
+    if (!$query) {
+    	die ('SQL Error: ' . mysqli_error($conn));
+    }
+    ?>
+    <h2 class="display-6 ml-5">Interest Relationship Table History</h2>
+        
+        <div class="container">
+     <table class="table table-striped table-bordered">
+          <thead>
+               <tr>
+                   <th>IID</th>
+                  <th>Name</th>
+                   <th>Modified on</th>
+              </tr>
+          </thead>
+    <tbody>
+    <?php
+
+    while ($row = mysqli_fetch_array($query))
+    {
+          echo '<tr>
+          <td>'.$row['IID'].'</td>
+          <td>'.$row['Name'].'</td>
+         <td>'.$row['Time_his'].'</td>
+        </tr>';
+
+   	}?>
+        </tbody>
+ 		<tfoot>
+ 			
+ 		</tfoot>
+ 	</table>
+    </div>
+            
+        <br>
+        <br>
+        
+          <?php
+    $db_host = 'localhost'; // Server Name
+    $db_user = 'root'; // Username
+    $db_pass = ''; // Password
+    $db_name = 'csclubs'; // Database Name
+
+    $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+    if (!$conn) {
+    	die ('Failed to connect to MySQL: ' . mysqli_connect_error());
+    }
+
+    $sql = 'SELECT * FROM user_access_history';
+
+    $query = mysqli_query($conn, $sql);
+
+    if (!$query) {
+    	die ('SQL Error: ' . mysqli_error($conn));
+    }
+    ?>
+    <h2 class="display-6 ml-5">User Access Relationship Table History</h2>
+        
+        <div class="container">
+     <table class="table table-striped table-bordered">
+          <thead>
+               <tr>
+                   <th>UAID</th>
+                  <th>User Type</th>
+                  <th>Access Level</th>
+                   <th>Modified on</th>
+              </tr>
+          </thead>
+    <tbody>
+    <?php
+
+    while ($row = mysqli_fetch_array($query))
+    {
+          echo '<tr>
+          <td>'.$row['UAID'].'</td>
+          <td>'.$row['UserType'].'</td>
+          <td>'.$row['AccessLevel'].'</td>
+         <td>'.$row['Time_his'].'</td>
+        </tr>';
+
+   	}?>
+        </tbody>
+ 		<tfoot>
+ 			
+ 		</tfoot>
+ 	</table>
+    </div>
+        
+        
+        
+        
+        
+        
     <div style="margin-top:500px;"></div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
