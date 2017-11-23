@@ -49,7 +49,7 @@
     <h1 class="display-4 text-md-center">Robotics Club</h1>
 
     <br>
-    
+
     <?php
     $db_host = 'localhost'; // Server Name
     $db_user = 'root'; // Username
@@ -72,6 +72,25 @@
 
     <!-- Members table -->
     <h2 class="display-6 ml-5">Executive Body</h2>
+    <button class="btn btn-link" data-toggle="modal" data-target="#modal">Edit</button>
+
+    <div class="modal" id="modal">
+      <div class="modal-dialogue modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Modal Title</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <div class="container">
       <table class="table table-striped table-bordered">
@@ -84,9 +103,8 @@
               </tr>
           </thead>
     <tbody>
+
     <?php
-
-
     while ($row = mysqli_fetch_array($query))
     {
       //$SID  = $row['SID'] == 0 ? '' : number_format($row['SID']);
@@ -99,6 +117,7 @@
 
     //	$no++;
     }?>
+
     </tbody>
     <tfoot>
       <tr>
