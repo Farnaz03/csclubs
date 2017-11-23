@@ -78,7 +78,6 @@
                    <th>Contact Number</th>
                    <th>Username</th>
                    <th>Password</th>
-                  <th>Access Level</th>
                    <th>Modified on</th>
               </tr>
           </thead>
@@ -96,7 +95,6 @@
             <td>'.$row['ContactNumber'].'</td>
              <td>'.$row['Username'].'</td>
               <td>'.$row['Password'].'</td>
-               <td>'.$row['AccessLevel'].'</td>
                <td>'.$row['Time_his'].'</td>
         </tr>';
 
