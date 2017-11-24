@@ -61,6 +61,26 @@
       <br><br>
       <button class="btn btn-primary"><a class="text-white" href="tablefunctions/StudentInsert.php">Insert into Student</a></button>
     </div>
+    
+    <br>
+
+    <div class="container" align="center">
+      <button class="btn btn-primary"><a class="text-white" href="tablefunctions/AreMembersInsert.php">Insert into Members Relationship</a></button>
+
+      <br><br>
+
+      <button class="btn btn-primary"><a class="text-white" href="tablefunctions/HaveInsert.php">Insert into Have Relationship</a></button>
+    </div>
+    
+    <br>
+
+    <div class="container" align="center">
+      <button class="btn btn-primary"><a class="text-white" href="tablefunctions/InterestInsert.php">Insert into Interest</a></button>
+
+      <br><br>
+
+      <button class="btn btn-primary"><a class="text-white" href="tablefunctions/CoordinateInsert.php">Insert into Coordinate Relationship</a></button>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
