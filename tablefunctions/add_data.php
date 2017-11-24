@@ -1,5 +1,14 @@
 <?php
-include_once "/includes/db_config.php";
+$db_host = 'localhost'; // Server Name
+$db_user = 'root'; // Username
+$db_pass = ''; // Password
+$db_name = 'csclubs'; // Database Name
+
+$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+if (!$conn) {
+  die ('Failed to connect to MySQL: ' . mysqli_connect_error());
+}
+
 if(isset($_POST['btn-save']))
 {
  // variables for input data
@@ -11,8 +20,8 @@ if(isset($_POST['btn-save']))
 
  // sql query for inserting data into database
 
- $sql_query = "INSERT INTO students(firstname,lastname,gender,emails) VALUES('$firstname','$lastname','$gender','$email')";
- mysql_query($sql_query);
+ $sql_query = "INSERT INTO students(FirstName,LastName,Gender,Email) VALUES('$firstname','$lastname','$gender','$email')";
+ mysqli_query($conn, $sql_query);
 
  // sql query for inserting data into database
 
@@ -39,37 +48,45 @@ if(isset($_POST['btn-save']))
 </head>
 <body>
 <center>
-
-<div id="header">
- <div id="content">
-    <label>CRUD Operations With PHP and MySql - By Cleartuts</label>
-    </div>
-</div>
-<div id="body">
- <div id="content">
+  <br>
+  <button align="center" class="btn btn-primary btn-small"><a class="text-white" href="../index.php">Main Page</a></button>
+  <br><br>
+<div class="row row-md-5 align-items-center">
+<div class="container" align="center">
+  <div class="col-3 col-md-4">
     <form method="post">
-    <table align="center">
-    <tr>
-    <td align="center"><a href="index.php">Back to main page</a></td>
-    </tr>
-    <tr>
-    <td><input type="text" name="firstname" placeholder="First Name" required /></td>
-    </tr>
-    <tr>
-    <td><input type="text" name="lastname" placeholder="Last Name" required /></td>
-    </tr>
-    <tr>
-    <td><input type="text" name="gender" placeholder="Gender" required /></td>
-    </tr>
-    <tr>
-    <td><input type="text" name="email" placeholder="Email" required /></td>
-    </tr>
-    <tr>
-    <td><button type="submit" name="btn-save"><strong>SAVE</strong></button></td>
-    </tr>
-    </table>
+      <table class="table" align="center">
+        <thead>
+          <h2>Insert into: Robotics</h2>
+        </thead>
+      <tr>
+        <td align="center">
+          <input class="form-control" type="text" name="firstname" placeholder="First Name" required />
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <input class="form-control" type="text" name="lastname" placeholder="Last Name" required />
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <input class="form-control" type="text" name="gender" placeholder="Gender" required />
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <input class="form-control" type="text" name="email" placeholder="Email" required />
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <button class="btn btn-success" type="submit" name="btn-save" align="center"><strong>SAVE</strong></button>
+        </td>
+      </tr>
+      </table>
     </form>
-    </div>
+</div>
 </div>
 
 <div style="margin-top:500px;"></div>
