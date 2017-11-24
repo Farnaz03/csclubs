@@ -18,27 +18,37 @@
 </head>
 <body>
     <!-- Navbar at top of page -->
-    <nav class="navbar navbar-light navbar-toggleable-md bg-primary">
-        <div class="container">
-          <a class="navbar-brand text-white" href="index.php">Dashboard</a>
-              <ul class="navbar-nav">
-
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#">Clubs</a>
-                      <div class="dropdown-menu">
-                        <a href="robotics.php" class="dropdown-item">Robotics</a>
-                        <a href="teched.php" class="dropdown-item">Technology Education Revolution</a>
-                      </div>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-white" href="auditlog.php">Audit Log</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-white" href="reports.php">Reports</a>
-                  </li>
-              </ul>
-          </div>
-    </nav>
+    <div class="bg-primary">
+      <nav class="mx-5 navbar navbar-light navbar-toggleable-md">
+        <a class="navbar-brand text-white" href="index.php">Dashboard</a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#">Clubs</a>
+            <div class="dropdown-menu">
+              <a href="robotics.php" class="dropdown-item">Robotics</a>
+              <a href="teched.php" class="dropdown-item">Technology Education Revolution</a>
+            </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="auditlog.php">Audit Log</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="reports.php">Reports</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link text-white" href="insert.php">Insert</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="update.php">Update</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="delete.php">Delete</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <br>
 
