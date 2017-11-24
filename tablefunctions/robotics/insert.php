@@ -12,7 +12,7 @@ if (!$conn) {
 if(isset($_POST['btn-save']))
 {
  // variables for input data
- $firstname = $_POST['FirstFame'];
+ $firstname = $_POST['FirstName'];
  $lastname = $_POST['LastName'];
  $gender = $_POST['Gender'];
  $email = $_POST['Email'];
