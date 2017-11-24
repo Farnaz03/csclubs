@@ -15,15 +15,20 @@ if(isset($_POST['btn-save']))
  $firstname = $_POST['FirstName'];
  $lastname = $_POST['LastName'];
  $gender = $_POST['Gender'];
+ $dob = $_POST['DOB'];
+ $usi = $_POST['USI'];
  $email = $_POST['Email'];
  $contactnumber = $_POST['ContactNumber'];
+ $yearofstudy = $_POST['YearOfStudy'];
+ $fieldofstudy = $_POST['FieldOfStudy'];
  $username = $_POST['Username'];
  $password = $_POST['Password'];
+ $usertype = $_POST['UserType'];
  // variables for input data
 
  // sql query for inserting data into database
 
- $sql_query = "INSERT INTO lecturer (FirstName,LastName,Gender,Email,ContactNumber,Username,Password) VALUES('$firstname','$lastname','$gender','$email','$contactnumber','$username',MD5('$password'))";
+ $sql_query = "INSERT INTO student (FirstName,LastName,Gender,DOB,USI,Email,ContactNumber,YearOfStudy,FieldOfStudy,Username,Password,UserType) VALUES('$firstname','$lastname','$gender','$dob','$usi','$email','$contactnumber','$yearofstudy','$fieldofstudy','$username',MD5('$password'))";
  mysqli_query($conn, $sql_query);
 
  // sql query for inserting data into database
@@ -61,7 +66,7 @@ if(isset($_POST['btn-save']))
     <form method="post">
       <table class="table" align="center">
         <thead>
-          <h2>Insert into: Lecturer</h2>
+          <h2>Insert into: Student</h2>
         </thead>
       <tr>
         <td align="center">
@@ -75,7 +80,17 @@ if(isset($_POST['btn-save']))
       </tr>
       <tr>
         <td align="center">
-          <input class="form-control" type="text" name="Gender" placeholder="Gender" required />
+          <input class="form-control" type="text" name="Gender" placeholder="Gender"/>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <input class="form-control" type="date" name="DOB" placeholder="Date of Birth"/>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <input class="form-control" type="text" name="USI" placeholder="USI"/>
         </td>
       </tr>
       <tr>
@@ -85,17 +100,33 @@ if(isset($_POST['btn-save']))
       </tr>
       <tr>
         <td align="center">
-          <input class="form-control" type="text" name="ContactNumber" placeholder="Contact Number" required />
+          <input class="form-control" type="text" name="ContactNumber" placeholder="Contact Number"/>
         </td>
       </tr>
       <tr>
         <td align="center">
-          <input class="form-control" type="text" name="Username" placeholder="Username" required />
+          <input class="form-control" type="text" name="YearOfStudy" placeholder="Year of Study"/>
+          <small>Enter either First, Second, Third or Fourth</small>
         </td>
       </tr>
       <tr>
         <td align="center">
-          <input class="form-control" type="text" name="Password" placeholder="Password" required />
+          <input class="form-control" type="text" name="FieldOfStudy" placeholder="Field of Study"/>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <input class="form-control" type="text" name="Username" placeholder="Username"/>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <input class="form-control" type="text" name="Password" placeholder="Password"/>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <input class="form-control" type="text" name="UserType" placeholder="User Type"/>
         </td>
       </tr>
         <td align="center">
