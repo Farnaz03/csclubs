@@ -12,15 +12,15 @@ if (!$conn) {
 if(isset($_POST['btn-save']))
 {
  // variables for input data
- $FirstName = $_POST['FirstName'];
- $LastName = $_POST['LastName'];
- $Gender = $_POST['Gender'];
- $Email = $_POST['Email'];
+ $name = $_POST['UserType'];
+ //$lme = $_POST['AccessLevel'];
+// $gender = $_POST['Gender'];
+// $email = $_POST['Email'];
  // variables for input data
 
  // sql query for inserting data into database
 
- $sql_query = "INSERT INTO `student` (`SID`, `FirstName`, `LastName`, `Gender`, `DOB`, `USI`, `Email`, `ContactNumber`, `YearOfStudy`, `FieldOfStudy`, `Username`, `Password`, `UserType`, `Time_his`)VALUES('$FirstName','$LastName','$Gender','$Email')";
+ $sql_query = "INSERT INTO user_access (UserType,AccessLevel) VALUES('$name')";
  mysqli_query($conn, $sql_query);
 
  // sql query for inserting data into database
@@ -57,20 +57,20 @@ if(isset($_POST['btn-save']))
     <form method="post">
       <table class="table" align="center">
         <thead>
-          <h2>Insert into: Robotics</h2>
+          <h2>Insert into: User Access</h2>
         </thead>
       <tr>
         <td align="center">
-          <input class="form-control" type="text" name="FirstName" placeholder="First Name" required />
+          <input class="form-control" type="text" name="UserType" placeholder="User Type" required />
         </td>
       </tr>
       <tr>
-        <td align="center">
-          <input class="form-control" type="text" name="LastName" placeholder="Last Name" required />
+  <!--     <td align="center">
+          <input class="form-control" type="text" name="AccessLevel" placeholder="Level " required />
         </td>
       </tr>
       <tr>
-        <td align="center">
+         <td align="center">
           <input class="form-control" type="text" name="Gender" placeholder="Gender" required />
         </td>
       </tr>
@@ -79,7 +79,7 @@ if(isset($_POST['btn-save']))
           <input class="form-control" type="text" name="Email" placeholder="Email" required />
         </td>
       </tr>
-      <tr>
+      <tr> -->
         <td align="center">
           <button class="btn btn-success" type="submit" name="btn-save" align="center"><strong>SAVE</strong></button>
         </td>
