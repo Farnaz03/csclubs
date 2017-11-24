@@ -15,7 +15,6 @@ if(isset($_POST['btn-save']))
  $cid = $_POST['CID'];
  $sid= $_POST['SID'];
  $role = $_POST['Role'];
-// $email = $_POST['Email'];
  // variables for input data
 
  // sql query for inserting data into database
@@ -76,11 +75,6 @@ if(isset($_POST['btn-save']))
         </td>
       </tr>
       <tr>
-         <!--    <td align="center">
-          <input class="form-control" type="text" name="Email" placeholder="Email" required />
-        </td>
-      </tr>
-      <tr> -->
         <td align="center">
           <button class="btn btn-success" type="submit" name="btn-save" align="center"><strong>SAVE</strong></button>
         </td>
