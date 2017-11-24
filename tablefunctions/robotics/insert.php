@@ -20,7 +20,7 @@ if(isset($_POST['btn-save']))
 
  // sql query for inserting data into database
 
- $sql_query = "INSERT INTO student(FirstName,LastName,Gender,Email) VALUES('$firstName','$lastName','$gender','$email')";
+ $sql_query = "INSERT INTO student(FirstName,LastName,Gender,Email) VALUES('$firstname','$lastname','$gender','$email')";
  mysqli_query($conn, $sql_query);
 
  // sql query for inserting data into database
