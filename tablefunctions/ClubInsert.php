@@ -49,6 +49,7 @@ if(isset($_POST['btn-save']))
 <body>
 <center>
   <br>
+  <button align="center" class="btn btn-primary btn-small"><a class="text-white" href="../insert.php">Back</a></button>
   <button align="center" class="btn btn-primary btn-small"><a class="text-white" href="../index.php">Main Page</a></button>
   <br><br>
 <div class="row row-md-5 align-items-center">

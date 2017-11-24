@@ -53,11 +53,11 @@
     <br>
 
     <div class="container" align="center">
-      <button class="btn btn-primary"><a class="text-white" href="../tablefunctions/ClubInsert.php">Insert into Club</a></button>
+      <button class="btn btn-primary"><a class="text-white" href="tablefunctions/ClubInsert.php">Insert into Club</a></button>
 
       <br><br>
 
-      <button class="btn btn-primary"><a class="text-white" href="../tablefunctions/UserAccess.php">Insert into User Access</a></button>
+      <button class="btn btn-primary"><a class="text-white" href="tablefunctions/UserAccessInsert.php">Insert into User Access</a></button>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
