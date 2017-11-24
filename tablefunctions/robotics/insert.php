@@ -61,22 +61,22 @@ if(isset($_POST['btn-save']))
         </thead>
       <tr>
         <td align="center">
-          <input class="form-control" type="text" name="firstname" placeholder="First Name" required />
+          <input class="form-control" type="text" name="FirstName" placeholder="First Name" required />
         </td>
       </tr>
       <tr>
         <td align="center">
-          <input class="form-control" type="text" name="lastname" placeholder="Last Name" required />
+          <input class="form-control" type="text" name="LastName" placeholder="Last Name" required />
         </td>
       </tr>
       <tr>
         <td align="center">
-          <input class="form-control" type="text" name="gender" placeholder="Gender" required />
+          <input class="form-control" type="text" name="Gender" placeholder="Gender" required />
         </td>
       </tr>
       <tr>
         <td align="center">
-          <input class="form-control" type="text" name="email" placeholder="Email" required />
+          <input class="form-control" type="text" name="Email" placeholder="Email" required />
         </td>
       </tr>
       <tr>
