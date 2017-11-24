@@ -12,7 +12,7 @@ if (!$conn) {
 if(isset($_POST['btn-save']))
 {
  // variables for input data
- $firstname = $_POST['FirstFame'];
+ $firstname = $_POST['FirstName'];
  $lastname = $_POST['LastName'];
  $gender = $_POST['Gender'];
  $email = $_POST['Email'];
@@ -20,7 +20,7 @@ if(isset($_POST['btn-save']))
 
  // sql query for inserting data into database
 
- $sql_query = "INSERT INTO student(FirstName,LastName,Gender,Email) VALUES('$FirstName','$LastName','$Gender','$Email')";
+ $sql_query = "INSERT INTO student(FirstName,LastName,Gender,Email) VALUES('$firstName','$lastName','$gender','$email')";
  mysqli_query($conn, $sql_query);
 
  // sql query for inserting data into database
