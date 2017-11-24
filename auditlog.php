@@ -49,7 +49,7 @@
         </ul>
       </nav>
     </div>
-    
+
     <h1 class="display-1 text-md-center">Audit Log</h1>
     <br>
     <tbody>
@@ -515,13 +515,6 @@
  		</tfoot>
  	</table>
     </div>
-
-
-
-
-
-
-    <div style="margin-top:500px;"></div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="

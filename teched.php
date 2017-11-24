@@ -82,11 +82,6 @@
 
     <!-- Members table -->
     <h2 class="display-6 ml-5 d-inline">Executive Body</h2>
-    <div class="d-inline float-right mr-5">
-      <button class="btn btn-link pr-2"><a class="text-success" href="tablefunctions/teched/insert-staff-teched.php">Insert</a></button>
-      <button class="btn btn-link pr-2"><a class="text-primary" href="tablefunctions/teched/update-staff-teched.php">Update</a></button>
-      <button class="btn btn-link pr-2"><a class="text-danger" href="tablefunctions/teched/delete-staff-teched.php">Delete</a></button>
-    </div>
 
     <div class="container">
       <table class="table table-striped table-bordered">
@@ -148,11 +143,6 @@
 
     <!-- Members table -->
     <h2 class="display-6 ml-5 d-inline">Members</h2>
-    <div class="d-inline float-right mr-5">
-      <button class="btn btn-link pr-2"><a class="text-success" href="tablefunctions/teched/insert-members-teched.php">Insert</a></button>
-      <button class="btn btn-link pr-2"><a class="text-primary" href="tablefunctions/teched/update-members-teched.php">Update</a></button>
-      <button class="btn btn-link pr-2"><a class="text-danger" href="tablefunctions/teched/delete-members-teched.php">Delete</a></button>
-    </div>
 
     <div class="container">
       <table class="table table-striped table-bordered">
@@ -191,8 +181,6 @@
     </tfoot>
     </table>
     </div>
-
-    <div style="margin-top:500px;"></div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="

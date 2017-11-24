@@ -49,7 +49,7 @@
         </ul>
       </nav>
     </div>
-    
+
     <br>
 
     <center><img src="img/cybersecuritylogo.jpg" width="20%" /></center>
@@ -61,8 +61,6 @@
     <br>
 
     <p class="display-4 text-md-center">COMING SOON</p>
-
-    <div style="margin-top:500px;"></div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
